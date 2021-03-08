@@ -1,0 +1,47 @@
+batch_size:
+- 64
+- 128
+classifier_dropout:
+- 0.3
+classifier_h_dim:
+- 128
+classifier_num_hidden:
+- 1
+gc_num_layers:
+- 3
+graph_embed_dim:
+- 32
+- 64
+lr:
+- 0.001
+- 0.005
+- 0.01
+mlp_hidden_dim:
+- 32
+- 64
+num_layers:
+- 2
+jk:
+- False
+irm:
+- null
+cutoff:
+- null
+reg_const:
+- null
+label_smooth:
+- null
+gpu_perc: 0.25
+seed:
+- 42
+- 43
+- 44
+- 45
+- 46
+- 47
+- 48
+- 49
+- 50
+- 51
+split:
+- 1

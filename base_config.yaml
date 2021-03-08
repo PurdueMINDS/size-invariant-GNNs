@@ -1,0 +1,23 @@
+dataset_name: NCI1
+model: KaryGNN
+gnn_type: "gin"
+num_splits: 1
+batch_size: 128
+lr: 0.005
+num_layers: 2
+mlp_num_hidden: 1
+mlp_hidden_dim: 64
+graph_embed_dim: 64
+graph_pooling: sum
+graphlet_size: 4
+only_common: true
+num_epochs: 1000
+data_dir: <absolute-path>/data
+jk: false
+classifier_h_dim: 128
+classifier_num_hidden: 1
+num_out: 2
+classifier_dropout: 0.3
+batch_norm:
+  presence: true
+  affine: false

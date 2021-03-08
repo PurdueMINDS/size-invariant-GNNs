@@ -1,0 +1,6 @@
+pandas==1.2.0
+networkx==2.5
+fastremap==1.11.1
+pytorch-lightning==1.1.2
+dacite==1.6.0
+omegaconf==2.0.5
