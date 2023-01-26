@@ -1,5 +1,13 @@
 # Size-Invariant Graph Representations for Graph Classification Extrapolations
 
+This repository contains the official code of the paper
+**[Size-Invariant Graph Representations for Graph Classification Extrapolations](https://arxiv.org/abs/2103.05045) (ICML 2021 Long Talk)**.
+
+<p align="center">
+<img src=./camera-ready-fig-600x600.png>
+</p>
+
+
 ### Manual dependencies (CUDA)
 - PyTorch 1.7.1
 - `torch-cluster` 1.5.8
@@ -28,7 +36,7 @@ $ unzip data.zip
 The command above will place the data _already sampled_ in the folder `data/`.
 Please specify its absolute path in `base_config.yaml`.
 
-### Hypertune:
+### Hypertune
 The provided configurations allow you to run the hyperparameter tuning of $\Gamma_\text{GIN}$ on `NCI1`.
 
 To tune for other datasets and/or models:
@@ -43,7 +51,7 @@ $ python hypertuning.py
 ```
 
 
-### Run a single configuration:
+### Run a single configuration
 The provided configurations allow you to run $\Gamma_\text{GNN}$ on `NCI1` with the best hyperparameters.
 
 To run for other datasets and/or models specify the parameters
@@ -52,4 +60,19 @@ in `base_config.yaml`.
 Run
 ```shell
 $ python lightning_modules.py
+```
+
+### Credits
+
+If you use this code, please cite
+
+```
+@inproceedings{bevilacqua2021size,
+  title={Size-invariant graph representations for graph classification extrapolations},
+  author={Bevilacqua, Beatrice and Zhou, Yangze and Ribeiro, Bruno},
+  booktitle={International Conference on Machine Learning},
+  pages={837--851},
+  year={2021},
+  organization={PMLR}
+}
 ```
